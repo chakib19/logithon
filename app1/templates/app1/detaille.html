@@ -1,13 +1,13 @@
 {% extends 'app1/layout.html' %}
 
 {% block content %}
-<h3 class="center-align red lighten-3">{incident.title}}</h3>
+<h3 class="center-align red lighten-3">{{incidents.title}}</h3>
 <div class="card">
   <div class="card-content">
-    {{incident.description}}
+    {{incidents.description}}
   </div>
   <div class="card-action">
-    {{incident.created_at}}
+    {{incidents.created_at}}
   </div>
 </div>
 <a href="/app1" class="btn">Go Back</a>
